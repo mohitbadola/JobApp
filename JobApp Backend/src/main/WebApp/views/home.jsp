@@ -15,17 +15,83 @@
     <link rel="stylesheet" type="text/css" href="style1.css">
     <style>
         h2 {
-            font-size: 16px;
-            margin-bottom: 5px;
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-align: center;
+            color: #ffffff;
         }
 
         p {
-            font-size: 12px;
+            font-size: 14px;
             margin: 0;
         }
 
         .bg-clr {
             background-color: #f1faee;
+        }
+
+        /* Adding hover and animation effects to buttons */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        /* Styling for the card hover effect */
+        .card {
+            border: none;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        /* Body background styling */
+        body {
+            background-color: #1e96fc; /* Primary blue */
+            color: #ffffff;
+        }
+
+        /* Style the navbar to match the theme */
+        .navbar {
+            background-color: #ffcc00;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 2.5rem;
+            color: #343a40 !important;
+            font-weight: 700;
+        }
+
+        /* Oval container with animation */
+        .oval-box {
+            position: relative;
+            width: 280px;
+            height: 180px;
+            background-color: #71816d;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .oval-box:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -33,9 +99,9 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning"> <!-- Changed to bg-warning for yellow background -->
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand fs-1 fw-medium" href="#">Jason Job Portal Web App</a>
+            <a class="navbar-brand" href="#">Jason Job Portal Web App</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,37 +122,34 @@
         </div>
     </nav>
 
+    <!-- Main Content -->
     <div class="container mt-5">
-        <div class="row">
+        <h2>Welcome to Jason Job Portal</h2>
+        <div class="row justify-content-center">
             <!-- Card 1: View All Jobs Block -->
-            <div class="col-md-6 mb-5">
-                <div class="card bg-white"> <!-- Changed to bg-white for white background -->
+            <div class="col-md-5 mb-5">
+                <div class="card cdClass">
                     <div class="card-body text-center">
                         <h5 class="card-title">View All Jobs</h5>
                         <form action="/viewalljobs" method="get">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Explore Jobs</button>
                         </form>
                     </div>
                 </div>
             </div>
 
             <!-- Card 2: Add Job Block -->
-            <div class="col-md-6 mb-5">
-                <div class="card bg-white"> <!-- Changed to bg-white for white background -->
+            <div class="col-md-5 mb-5">
+                <div class="card cdClass">
                     <div class="card-body text-center">
                         <h5 class="card-title">Add Job</h5>
                         <form action="/addjob" method="get">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Post a Job</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-        </div>
-    </div>
 
     <!-- Add the Bootstrap JS and Popper.js scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
