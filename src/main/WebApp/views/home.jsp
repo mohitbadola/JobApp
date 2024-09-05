@@ -32,7 +32,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-clr">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning"> <!-- Changed to bg-warning for yellow background -->
         <div class="container">
             <a class="navbar-brand fs-1 fw-medium" href="#">Jason Job Portal Web App</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -57,9 +58,9 @@
 
     <div class="container mt-5">
         <div class="row">
-            <!-- Card 1 -->
+            <!-- Card 1: View All Jobs Block -->
             <div class="col-md-6 mb-5">
-                <div class="card bg-warning">
+                <div class="card bg-white"> <!-- Changed to bg-white for white background -->
                     <div class="card-body text-center">
                         <h5 class="card-title">View All Jobs</h5>
                         <form action="/viewalljobs" method="get">
@@ -69,9 +70,9 @@
                 </div>
             </div>
 
-            <!-- Card 2 -->
+            <!-- Card 2: Add Job Block -->
             <div class="col-md-6 mb-5">
-                <div class="card">
+                <div class="card bg-white"> <!-- Changed to bg-white for white background -->
                     <div class="card-body text-center">
                         <h5 class="card-title">Add Job</h5>
                         <form action="/addjob" method="get">
@@ -80,6 +81,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
 
         </div>
     </div>
