@@ -21,10 +21,11 @@
             margin-bottom: 20px;
         }
 
-        .bg-clr{
-        background-color:#f1faee;
+        .bg-clr {
+            background-color: #ffc107 !important; /* Set the navbar background to yellow */
         }
     </style>
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
