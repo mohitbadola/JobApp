@@ -47,7 +47,7 @@
 						<li class="nav-item"><a class="nav-link" href="home">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="viewalljobs">About</a></li>
 
-						<li class="nav-item"><a class="nav-link" href="https://jason.com/">Contact</a>
+						<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/mohit-badola-717b40216/">Contact</a>
 						</li>
 					</ul>
 				</div>
